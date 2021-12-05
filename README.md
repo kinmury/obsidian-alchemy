@@ -3,8 +3,8 @@
 
 <h2 align=center> Gallery </h2>
 
-![]()
-![]()
+![](https://github.com/kinmury/Alchemy/blob/main/Showcase/ShowcaseF.png)
+![](https://github.com/kinmury/Alchemy/blob/main/Showcase/ShowcaseK.png)
 
 <h2 align=center> Note </h2>
 
