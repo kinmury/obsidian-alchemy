@@ -2192,3 +2192,137 @@ svg.oz-folder-toggle {
     font-weight: bold;
     color: #9b783b;
 }
+
+/*──────────────────────────────────────────────────
+*
+*                       PDF
+*
+──────────────────────────────────────────────────*/
+@media print {
+    html, body {
+        padding-top: 0 !important;
+        overflow: auto !important;
+        height: auto !important;
+    }
+
+    aside {display: none !important;}
+    body > :not(.print) {display: none !important;}
+    div {break-inside: avoid !important;}
+
+    iframe, .titlebar,.app-container,.progress-bar,.popover,.markdown-embed-link {
+        display: none !important;
+    }
+    
+    /*───── <Headers> ─────*/
+    .print h1 {color: #d6b578 !important; text-align: center;}
+    .print h2 {color: #c4a05e !important; text-align: center;}
+    .print h3 {color: #c2984c !important; text-align: center;}
+    .print h4 {color: #b18535 !important; text-align: center;}
+    .print h5 {color: #9e7426 !important; text-align: center;}
+    .print h6 {color: #835d16 !important; text-align: center;}
+
+    /*───── <Blockquote> ─────*/
+    .print blockquote {border-color: black; background-color: #5c5a588f;}
+    .print blockquote p {color: #ffffff !important;}
+    .print blockquote li {color: #ffffff !important;}
+
+    .print .token.operator {background: black;}
+
+    /*───── <BulletTags> ─────*/
+    .print .tag[href="#q"], .print .tag[href="#-"],
+    .print .tag[href="#m"], .print .tag[href="#d"],
+    .print .tag[href="#i"], .print .tag[href="#a"],
+    .print .tag[href="#h"] {filter: invert(100%) !important;}
+
+    .print .admonition .tag[href="#q"], .print .admonition  .tag[href="#-"],
+    .print .admonition  .tag[href="#m"], .print .admonition  .tag[href="#d"],
+    .print .admonition  .tag[href="#i"], .print .admonition  .tag[href="#a"],
+    .print .admonition  .tag[href="#h"] {filter: invert(0%) !important;}
+
+
+    /*───── <OL | UL> ─────*/
+    .print li::marker {color: #5c381e !important;}
+    .print li {color: #5c381e !important;}
+    .print ul > li {color: #5c381e !important;}
+    .print ol > li {color: #5c381e !important;}
+
+    /*───── <Mermaid> ─────*/
+    .print .markdown-preview-view .mermaid .edgePath .path {stroke: black !important;}
+    .print .markdown-preview-view .mermaid .edgePaths defs * {fill: black !important;}
+    .print .markdown-preview-view .mermaid .node rect.label-container, 
+    ellipse.label-container, 
+    polygon.label-container, 
+    circle.label-container {
+        fill: #372611 !important; 
+        stroke: black !important;
+    }
+
+    .print .markdown-preview-view .mermaid .node .label {
+        color: white !important;
+        vertical-align: middle !important;
+        text-align: center !important;
+    }
+
+    /*───── <Admonition Plugin> ─────*/
+    .print .admonition > .admonition-content-holder > .admonition-content ul > li::marker {color: white !important;}
+    .print .admonition > .admonition-content-holder > .admonition-content ol > li::marker {color: white !important;}
+    .print .admonition > .admonition-content-holder > .admonition-content ul > li {color: #ffffff !important;}
+    .print .admonition > .admonition-content-holder > .admonition-content ol > li {color: #ffffff !important;}
+    
+    .print .admonition blockquote p {color: white !important}
+
+    .print .admonition h1 {color: #d6b578 !important; text-align: center;}
+    .print .admonition h2 {color: #c4a05e !important; text-align: center;}
+    .print .admonition h3 {color: #c2984c !important; text-align: center;}
+    .print .admonition h4 {color: #b18535 !important; text-align: center;}
+    .print .admonition h5 {color: #9e7426 !important; text-align: center;}
+    .print .admonition h6 {color: #835d16 !important; text-align: center;}
+
+    .print .admonition strong, .print .admonition b {color: #3a8a86 !important}
+    .print .admonition em, .print .admonition i {color: #40946a !important}
+
+    /*───── <Bold> ─────*/
+    .print strong, .cm-s-obsidian .cm-strong {color: #3a8a86 !important;}
+
+    /*───── <Italic> ─────*/
+    .print em, .print i {font-style: italic !important; color: #40946a !important;}
+
+    /*───── <Links> ─────*/
+    .print a {text-shadow: none !important;}
+    .print a.external-link {font-style: italic !important;}
+    .print .internal-link {color: rgb(184, 83, 0) !important;}
+
+    /*───── <Highlight> ─────*/
+    .print mark {color: #ffd3b4 !important}
+
+    /*───── <Tables> ─────*/
+    .print table {border-color: black;}
+    .print .markdown-preview-view th {background-color: #a1a1a1;border-bottom: 2px solid #000000;}
+    .print .markdown-preview-view th:last-of-type, .print .markdown-preview-view td:last-of-type {border-left: 1px solid #000000;}
+    .print .markdown-preview-view th:not(:last-of-type), .print .markdown-preview-view td:not(:last-of-type) {border-right: 1px solid #000000;}
+    .print .markdown-preview-view td {border-bottom: 1px solid #000000;}   
+    .print .markdown-preview-view td:nth-child(even) {background-color: #64646494;}
+    .print .markdown-preview-view td:nth-child(odd) {background-color: #4e4e4e94;}
+
+    /*───── <Code> ─────*/
+    .print code {
+        padding: 4px !important; line-height: 1.4em !important;
+        background-color: #7a7976 !important; color: #ffffff !important;
+        break-inside: avoid !important;
+    }
+
+    .print pre {background-color: black !important;}
+    
+    .print pre > code {
+        background-color: black !important;
+        color: white !important;
+    }
+
+    /*───── <Dataview> ─────*/
+    .print .dataview tr:nth-child(even) {background-color: #c2bfbd;}
+    .print .dataview-error {background-color: #919191; text-align: center; font-family: "JetBrains Mono";}
+
+    /*───── <Lines below list items> ─────*/
+    .print ol ol::before, .print ol ul::before {border-left: 1px solid #393c46;}
+    .print ul ul::before, .print ul ol::before {border-left: 1px solid #393c46;}
+}
