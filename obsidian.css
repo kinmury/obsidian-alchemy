@@ -1211,7 +1211,7 @@ ol ol ol,
 ol ol ol ol ol ol, 
 ul ol ul ol ol ol, 
 ul ol ul ol ol ol ol ol ol {
-    list-style-type: upper-roman;
+    list-style-type: decimal;
 }
 
 ul, 
