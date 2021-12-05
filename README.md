@@ -8,7 +8,7 @@
 
 <h2 align=center> Note </h2>
 
-You can't see both ribbons and status bar. But if you place your mouse over those places where it should be, it will appear ;D
+You can't see both ribbons and status bar. But if you hover your mouse over those places where it should be, it will appear ;D
 
 <h2 align=center> Instalation </h2>
 
