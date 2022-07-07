@@ -1,5 +1,10 @@
-<h1 align="center"><b><i>Alchemy</i></b></h1>
+<h2 align="center"><b><i> Important Notice </i></b></h2>
 
+I've got good news and bad news. The bad news is that this theme won't be maintained anymore. The good news are that, even though this theme won't be available on the *Community Theme* section, it will still be available here, on the GitHub repository for anyone to use and, probably the most important thing, is that this theme is updated and incorporated as an **Alternative Theme** on my newest theme [Ukiyo](https://github.com/kinmury/obsidian-ukiyo)
+
+<p align=center><i>Thanks to everyone that has used this theme, and I hope you like the newer version.<i></p>
+
+<h1 align="center"><b><i>Alchemy</i></b></h1>
 
 <h2 align=center> Gallery </h2>
 
